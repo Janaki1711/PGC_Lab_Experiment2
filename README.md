@@ -51,40 +51,6 @@ flowchart LR
 
 ---
 
-## Repository Structure
-
-```
-PGC_Lab_Experiment2/
-├── README.md                                           # Master Lab Documentation & Benchmark Report
-├── .gitignore                                          # Git ignore rules for build artifacts & binaries
-├── src/                                                # Source Code Implementations
-│   ├── pthreads/                                       # POSIX Threads Programs
-│   │   ├── thread1.c                                   # Single Thread Creation & Joining
-│   │   ├── thread2.c                                   # Multi-Thread Spawning with Thread IDs
-│   │   ├── thread_sum.c                                # Array Chunking & Partial Summation
-│   │   ├── race.c                                      # Unsynchronized Race Condition Demo
-│   │   ├── mutex.c                                     # Mutex Synchronization (pthread_mutex_t)
-│   │   └── pthread_perf.c                              # Scalability Benchmark (1, 2, 4, 6, 16 Threads)
-│   ├── openmp/                                         # OpenMP Programs
-│   │   ├── omp1.c                                      # Parallel Region & Thread Identification
-│   │   ├── omp_sum.c                                   # Work-Sharing Loop & Reduction Clause
-│   │   ├── omp_race.c                                  # OpenMP Data Race Condition
-│   │   ├── omp_critical.c                              # Critical Section Synchronization
-│   │   ├── omp_barrier.c                               # Phased Barrier Synchronization
-│   │   └── omp_perf.c                                  # Scalability Benchmark (1, 2, 4, 6, 16 Threads)
-│   └── sequential/                                     # Baseline Reference
-│       └── sequential.c                                # Single-Threaded Sequential Program
-├── images/                                             # Screenshots & Performance Charts
-│   ├── performance_comparison_charts.png               # Combined 3-Panel Benchmark Chart
-│   ├── execution_time_vs_threads.png                   # Execution Time Scaling Curve
-│   ├── speedup_vs_threads.png                          # Speedup Factor vs. Ideal Curve
-│   ├── efficiency_vs_threads.png                       # Parallel Efficiency Percentage Curve
-│   └── *.jpeg                                          # Terminal Execution Output Screenshots
-└── scripts/
-    └── generate_charts.py                              # Python Script to regenerate performance charts
-```
-
----
 
 ## 1. Experiment Objectives
 
